@@ -1,5 +1,4 @@
 from flask import jsonify
-
 class Response:
     def success(self, data):
         response = jsonify({
