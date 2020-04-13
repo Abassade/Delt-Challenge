@@ -22,9 +22,6 @@ After cloning the project, run the command below to install all the required dep
 pip install -r requirements.txt
 ```
 
-### Known bugs
-- There are some commented codes in the project due to issues arose when trying to set up Postgres database on Heroku in which after, the database was changed to Mongodb - (model.py) file and some in (app.py) file
-
 ### The API routes Routes (Both are HTTP)
 Name                                         | Endpoint
 ------------------------------------------- | -------------------------------------------
@@ -62,7 +59,7 @@ Sample search call (remote) - ```https://deltai-challenge.herokuapp.com/api/news
 
 ```json
 {
- "keywords": ["Mexico", "President"]
+ "keywords": ["i", "love", "you"]
 }
 ```
 
@@ -70,27 +67,27 @@ Sample search call (remote) - ```https://deltai-challenge.herokuapp.com/api/news
 
 ```json
 {
-    "error": false,
-    "news": [
-        {
-            "content": "Chat with us in Facebook Messenger. Find out what's happening in the world as it unfolds.",
-            "ranking": 1,
-            "reference": "https://www.cnn.com/videos/world/2020/03/25/mexico-brazil-response-coronavirus-rivers-lead-vpx.cnn",
-            "title": "Video shows Mexican president in a crowd of children during coronavirus pandemic"
-        },
-        {
-            "content": "Ford said Tuesday won’t restart its factories in the U.S., Canada and Mexico on Monday, March 30 as the automaker had originally planned.\r\nThe company, which suspended production at its North American factories due to the continued spread of COVID-19, has dec… [+1020 chars]",
-            "ranking": 1,
-            "reference": "http://techcrunch.com/2020/03/24/ford-wont-restart-north-american-plants-march-30/",
-            "title": "Ford won’t restart North American plants March 30"
-        },
-        {
-            "content": "Image copyrightReutersImage caption\r\n Many checkpoints on the US-Canada border are closing\r\nThe US has suspended all non-essential traffic across its borders with both Mexico and Canada as it battles to control the coronavirus outbreak.\r\nThe curbs will go int… [+1377 chars]",
-            "ranking": 1,
-            "reference": "https://www.bbc.co.uk/news/world-us-canada-51980681",
-            "title": "Coronavirus: US, Canada and Mexico restrict border traffic"
-        }
-    ]
+  "error": false,
+  "news": [
+    {
+      "content": "Day Three of Tech 911 here-to-answer-your-questions week, and Im barreling through reader comments as if it were my job. Which it is. It is my job, and I love helping out as best I can. Remember, if you have a question about the tech of working from home, bec… [+5095 chars]",
+      "ranking": 0.8,
+      "reference": "https://lifehacker.com/why-does-my-work-laptop-have-slower-wifi-than-my-other-1842489912",
+      "title": "Why Does My Work Laptop Have Slower Wifi Than My Other Devices?"
+    },
+    {
+      "content": "It is possible that, while stocking up to stay home, you purchased too much of one particular item. I did this with eggs. It all happened so fast: I was at my local restaurant supply store, buying a normal amount (four pounds) of butter, when I was suddenly m… [+3043 chars]",
+      "ranking": 0.78,
+      "reference": "https://skillet.lifehacker.com/so-you-bought-too-many-eggs-1842454706",
+      "title": "So, You Bought Too Many Eggs"
+    },
+    {
+      "content": "Its obvious that Meathead Goldwyn knows a lot about meatbut it must be said that after nearly half a century of eating and drinking for a living, he knows a lot of other things, too. His site, AmazingRibs.com, is not only a font of BBQ and meat-centric grilli… [+14793 chars]",
+      "ranking": 0.0,
+      "reference": "https://skillet.lifehacker.com/im-meathead-goldwyn-of-amazingribs-and-this-is-how-i-ea-1842364465",
+      "title": "I'm Meathead Goldwyn of AmazingRibs and This Is How I Eat"
+    }
+  ]
 }
 ```
 ## Author
